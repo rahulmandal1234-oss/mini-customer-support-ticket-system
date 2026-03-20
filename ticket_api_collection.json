@@ -1,0 +1,36 @@
+{
+  "info": {
+    "name": "Ticket API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Tickets",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:4000/tickets"
+        }
+      }
+    },
+    {
+      "name": "Create Ticket",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"title\": \"Test Ticket\"}"
+        },
+        "url": {
+          "raw": "http://localhost:4000/tickets"
+        }
+      }
+    }
+  ]
+}
